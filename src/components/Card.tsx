@@ -1,4 +1,5 @@
 import divider from "../images/pattern-divider-desktop.svg";
+import dividermobile from "../images/pattern-divider-mobile.svg";
 import icon from "../images/icon-dice.svg";
 import { useQuery } from "react-query";
 
@@ -23,8 +24,9 @@ export const Card = () => {
         </p>
       )}
       <img src={divider} alt="divider" className="card__diveder" />
+      <img src={dividermobile} alt="divider-mobile" className="card__diveder-mobile" />
       <div className="card__footer-card" onClick={()=>refetch}>
-        <img src={icon} alt="icon" className="card__diveder" onClick={()=>refetch} />
+        <img src={icon} alt="icon" className="card__icon" onClick={()=>refetch} />
       </div>
     </div>
   );
